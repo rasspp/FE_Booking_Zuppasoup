@@ -1,0 +1,182 @@
+/* *** Custom calendar */
+
+:root {
+   --main-color: transparent;
+   /* --main-color: #f89629; */
+   --second-color: #f09013;
+   /* --second-color: #e48103; */
+   --third-color: #111726;
+   --fc-list-event-hover-bg-color: orange;
+}
+
+.fc-today-button,
+.fc-prev-button,
+.fc-next-button,
+.fc-dayGridMonth-button,
+.fc-timeGridWeek-button,
+.fc-timeGridDay-button,
+.fc-listWeek-button {
+   background-color: var(--third-color) !important;
+   border: 2px solid white !important;
+}
+
+/* ini titik di tanggal */
+/* .fc-daygrid-event-dot,
+.fc-list-event-dot {
+   border-color: #23de20 !important;
+} */
+
+/* ini tanggal di samping titik tanggal */
+.fc-event-time {
+   color: white !important;
+   background: var(--main-color) !important;
+   /* background: rgb(220, 148, 13) !important; */
+   color: white !important;
+   padding: 2px 5px !important;
+   border-radius: 4px !important;
+   border: 1px solid var(--second-color) !important;
+}
+.fc-list-event-time {
+   background: var(--second-color) !important;
+   /* background: var(--main-color) !important; */
+   color: white !important;
+   padding: 10px 8px !important;
+   border-radius: 4px !important;
+   border: 1px solid white !important;
+}
+
+.fc-event {
+   background-color: #111726 !important;
+   /* background-color: var(--second-color) !important; */
+   cursor: pointer !important;
+   border-radius: 3px;
+   overflow: hidden;
+   box-shadow: 0px 3px orange;
+   color: white !important;
+   transition: ease-in 0.5s;
+}
+.fc-event:hover {
+   /* background-color: var(--second-color) !important; */
+   background-color: rgb(0, 0, 0) !important;
+   box-shadow: 0px 0px orange;
+   color: white !important;
+}
+
+.fc-h-event {
+   font-weight: normal !important;
+   border: none !important;
+}
+
+.fc-daygrid-dot-event .fc-event-title {
+   text-transform: capitalize;
+}
+
+/* extra mini */
+@media screen and (max-width: 550px) {
+   .fc-media-screen {
+      font-size: 10px;
+   }
+   .fc-today-button,
+   .fc-prev-button,
+   .fc-next-button,
+   .fc-dayGridMonth-button,
+   .fc-timeGridWeek-button,
+   .fc-timeGridDay-button,
+   .fc-listWeek-button,
+   .fc-daygrid-day {
+      font-size: 8px !important;
+   }
+
+   .fc-col-header-cell {
+      font-size: 6px !important;
+   }
+
+   .fc-toolbar-title {
+      font-size: 12px !important;
+   }
+
+   .fc-daygrid-day {
+      max-height: 10px !important;
+   }
+
+   .fc-daygrid-dot-event {
+      max-height: 10px !important;
+   }
+   .fc-daygrid-event-dot {
+      height: 0px !important;
+      width: 5px !important;
+   }
+   .fc-header-toolbar.fc-toolbar:first-child {
+      display: flex !important;
+      flex-direction: column;
+
+      /* flex-direction: column !important; */
+   }
+
+   .fc-header-toolbar.fc-toolbar .fc-toolbar-chunk {
+      width: 100% !important;
+   }
+
+   .fc-header-toolbar.fc-toolbar .fc-toolbar-chunk:nth-child(1) {
+      order: 3;
+      display: flex;
+      justify-content: space-between;
+   }
+   .fc-header-toolbar.fc-toolbar .fc-toolbar-chunk:nth-child(2) {
+      order: 2;
+      text-align: center;
+      margin-top: 15px;
+      margin-bottom: -22px;
+   }
+
+   .fc-header-toolbar.fc-toolbar .fc-toolbar-chunk:nth-child(3) {
+      order: 1;
+   }
+   .fc-header-toolbar.fc-toolbar .fc-toolbar-chunk:nth-child(3) .fc-button-group {
+      display: flex;
+      justify-content: center;
+      gap: 5px;
+   }
+}
+
+/* mini */
+@media screen and (min-width: 640px) {
+   .fc-media-screen {
+      font-size: 11px;
+   }
+}
+
+/* small */
+@media screen and (min-width: 401px) and (max-width: 500px) {
+   .fc-media-screen {
+      font-size: 12px;
+   }
+}
+
+/* medium */
+@media screen and (min-width: 501px) and (max-width: 600px) {
+   .fc-media-screen {
+      font-size: 13px;
+   }
+}
+
+/* large */
+@media screen and (min-width: 601px) and (max-width: 700px) {
+   .fc-media-screen {
+      font-size: 14px;
+   }
+}
+
+/* extra large */
+@media screen and (min-width: 701px) and (max-width: 800px) {
+   .fc-media-screen {
+      font-size: 15px;
+   }
+}
+
+/* extra extra large */
+@media screen and (min-width: 801px) {
+   .fc-media-screen {
+      font-size: 16px;
+   }
+}

@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("./css/index.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* change body preference */
+::selection {
+   background-color: white;
+   color: #f89629;
+}
+
+::-webkit-scrollbar {
+   display: none;
+}

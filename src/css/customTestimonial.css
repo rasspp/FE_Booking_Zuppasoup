@@ -1,0 +1,10 @@
+::root {
+   --second-color: #f09013;
+}
+.swiper-button-prev,
+.swiper-button-next {
+   color: var(--second-color) !important;
+}
+.swiper-pagination-bullet-active {
+   background-color: var(--second-color);
+}

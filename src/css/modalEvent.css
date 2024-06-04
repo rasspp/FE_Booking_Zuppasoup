@@ -1,0 +1,11 @@
+/* Modal Event Css */
+.group-container {
+   @apply w-full border-2 border-orange-500 flex  rounded-md  overflow-hidden gap-3;
+}
+
+.start-paragraf {
+   @apply w-6/12 flex justify-start items-center leading-4 p-1 pl-2 text-end;
+}
+.end-paragraf {
+   @apply w-8/12 h-full  text-white bg-orange-500 flex justify-start items-center text-center leading-5 py-1 px-4;
+}

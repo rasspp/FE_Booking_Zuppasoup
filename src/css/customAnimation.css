@@ -1,0 +1,15 @@
+/* Animation */
+@keyframes walkInCorner {
+   0% {
+      transform: translateX(0px);
+   }
+   50% {
+      transform: translateX(-150px);
+   }
+   100% {
+      transform: translateX(0px);
+   }
+}
+.logo-animate {
+   animation: walkInCorner 10s linear infinite;
+}

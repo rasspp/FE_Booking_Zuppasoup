@@ -1,3 +1,3 @@
 # FE_Booking_Zuppasoup
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is Client Side from zuppasoup.my.id
